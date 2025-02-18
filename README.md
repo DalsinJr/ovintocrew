@@ -83,10 +83,6 @@ Both endpoints return a JSON response of type `EmployeeProximityResponse`, which
 ---
 
 ## Running the Application
-### Build the project and create the JAR
-```bash
-  mvn clean package
-```
 
 ### Build the project with Maven:
 ```bash
@@ -103,6 +99,10 @@ Alternatively, run the generated jar:
 
 ## Running the application with Docker
 
+### Build the project and create the JAR
+```bash
+  mvn clean package
+```
 
 ### Build and run the container:
 
