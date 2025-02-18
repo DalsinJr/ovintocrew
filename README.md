@@ -79,7 +79,7 @@ google:
 Both endpoints return a JSON response of type `EmployeeProximityResponse`, which includes:
 - A list of employees within the threshold distance.
 - The employee who is the furthest from the HQ.
-
+ > **Note:** Also, it is possible to test the solution by importing the Postman file Ovinto.postman_collection.json located at the project root.
 ---
 
 ## Running the Application

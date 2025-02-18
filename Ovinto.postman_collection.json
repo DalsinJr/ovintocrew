@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "3cd485a2-b3d5-4a8a-9f89-ac45213f3e99",
+		"name": "Ovinto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17089819"
+	},
+	"item": [
+		{
+			"name": "processBody",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\"?>\n<Company name='Ovinto'>\n  <Employee id='1'>\n      <FirstName>Joris</FirstName>\n      <LastName>Boschmans</LastName>\n      <Email>joris.boschmans@ovinto.com</Email>\n  </Employee>\n  <Employee id='2'>\n      <FirstName>Jasper</FirstName>\n      <LastName>Maes</LastName>\n      <Email>jasper.maes@ovinto.com</Email>\n  </Employee>\n  <Employee id='3'>\n      <FirstName>Leander</FirstName>\n      <LastName>Hoedt</LastName>\n      <Email>leander.hoedt@ovinto.com</Email>\n  </Employee>\n  <Employee id='4'>\n      <FirstName>Salvatore</FirstName>\n      <LastName>Castellano</LastName>\n      <Email>salvatore.castellano@ovinto.com</Email>\n  </Employee>\n  <Employee id='5'>\n      <FirstName>Huyen</FirstName>\n      <LastName>Nguyen Thu</LastName>\n      <Email>linh.castellano@ovinto.com</Email>\n  </Employee>\n  <Employee id='6'>\n      <FirstName>Frederick</FirstName>\n      <LastName>Ronse</LastName>\n      <Email>frederick.ronse@ovinto.com</Email>\n  </Employee>\n  <Employee id='7'>\n      <FirstName>Amelie</FirstName>\n      <LastName>De Clercq-Van Hecke</LastName>\n      <Email>amelie.dcvh@ovinto.com</Email>\n  </Employee>\n  <Employee id='8'>\n      <FirstName>Felix</FirstName>\n      <LastName>Delva</LastName>\n      <Email>felix.delva@ovinto.com</Email>\n  </Employee>\n  <Employee id='9'>\n      <FirstName>Joris</FirstName>\n      <LastName>Claes</LastName>\n      <Email>joris.claes@ovinto.com</Email>\n  </Employee>\n  <Employee id='10'>\n      <FirstName>Luigi</FirstName>\n      <LastName>Claeys</LastName>\n      <Email>luigi.claeys@ovinto.com</Email>\n  </Employee>\n  <Employee id='11'>\n      <FirstName>Ellen</FirstName>\n      <LastName>Bogaert</LastName>\n      <Email>ellen.bogaert@ovinto.com</Email>\n  </Employee>\n  <Employee id='12'>\n      <FirstName>Ellen</FirstName>\n      <LastName>Goemaere</LastName>\n      <Email>ellen.goemaere@ovinto.com</Email>\n  </Employee>\n  <Employee id='13'>\n      <FirstName>Patrick</FirstName>\n      <LastName>Wuyts</LastName>\n      <Email>patrick.wuyts@ovinto.com</Email>\n  </Employee>\n  <Employee id='14'>\n      <FirstName>Anna</FirstName>\n      <LastName>Plonka</LastName>\n      <Email>anna.plonka@ovinto.com</Email>\n  </Employee>\n  <Employee id='15'>\n      <FirstName>Kerensa</FirstName>\n      <LastName>tiberghien</LastName>\n      <Email>kerensa.tiberghien@ovinto.com</Email>\n  </Employee>\n  <Employee id='16'>\n      <FirstName>Hans</FirstName>\n      <LastName>de With</LastName>\n      <Email>hans.de.with@ovinto.com</Email>\n  </Employee>\n</Company>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/process",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"process"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request POST 'http://localhost:8080/api/employees/uploadBody' \\\n--header 'Content-Type: application/xml' \\\n--data-raw '<?xml version=\"1.0\"?>\n<Company name=\"Ovinto\">\n  <Employee id=\"1\">\n      <FirstName>Joris</FirstName>\n      <LastName>Boschmans</LastName>\n      <Email>joris.boschmans@ovinto.com</Email>\n  </Employee>\n  <Employee id=\"2\">\n      <FirstName>Jasper</FirstName>\n      <LastName>Maes</LastName>\n      <Email>jasper.maes@ovinto.com</Email>\n  </Employee>\n  <!-- Add more employees if needed -->\n</Company>'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "processFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/path/to/your/employees.xml"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"upload"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request POST 'http://localhost:8080/api/employees/upload' \\\n--form 'file=@\"/path/to/your/employees.xml\"'\n"
+			},
+			"response": []
+		}
+	]
+}
