@@ -1,6 +1,5 @@
 package com.example.ovintocrew.controller;
 
-import com.example.ovintocrew.model.dto.Employee;
 import com.example.ovintocrew.model.dto.EmployeeProximityResponse;
 import com.example.ovintocrew.service.EmployeeService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -19,7 +18,6 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/employees")

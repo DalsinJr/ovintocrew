@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    // Handle any uncaught exception with a 500 Internal Server Error response.
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleAllExceptions(Exception ex) {
         return ResponseEntity
@@ -17,7 +16,6 @@ public class GlobalExceptionHandler {
                 .body("Internal server error: " + ex.getMessage());
     }
 
-    // Handle IllegalArgumentException with a 400 Bad Request response.
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<String> handleIllegalArgumentException(IllegalArgumentException ex) {
         return ResponseEntity

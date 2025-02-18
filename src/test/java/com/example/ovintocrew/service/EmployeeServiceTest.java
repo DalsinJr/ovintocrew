@@ -36,10 +36,10 @@ public class EmployeeServiceTest {
         List<Employee> employees = employeeService.parseEmployeesFromXml(inputStream);
         assertNotNull(employees);
         assertEquals(2, employees.size());
-        assertEquals("1", employees.get(0).id());
-        assertEquals("John", employees.get(0).firstName());
-        assertEquals("Doe", employees.get(0).lastName());
-        assertEquals("john.doe@example.com", employees.get(0).email());
+        assertEquals("1", employees.getFirst().id());
+        assertEquals("John", employees.getFirst().firstName());
+        assertEquals("Doe", employees.getFirst().lastName());
+        assertEquals("john.doe@example.com", employees.getFirst().email());
     }
 
     @Test
