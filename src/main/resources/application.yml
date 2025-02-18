@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ovintocrew
+location:
+  client:
+    base-url: "https://client-dev.ovinto.com/api/v1/ovintocrew/"
+  ovinto:
+    hq:
+      lat: 51.10
+      lon: 3.43
+google:
+  client:
+    api-key: "YOUR_GOOGLE_API_KEY"
+    base-url: "https://maps.googleapis.com/maps/api/distancematrix/json"
+
+employee:
+  threshold:
+    km: 30.0
